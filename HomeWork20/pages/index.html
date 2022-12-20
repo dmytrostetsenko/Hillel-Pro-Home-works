@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork20</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../script/script.js" type="module" defer></script>
+</head>
+<body>
+    <main class="main">
+        <section class="section-login">
+            <div class="container">
+                <div class="form-root"></div>
+            </div>
+        </section>
+        <section class="section-users">
+            <div class="container">
+                <article class="users">
+                    <nav class="users__navigation">
+                        <button class="button users__logout">Log Out</button>
+                    </nav>
+                    <h1 class="users__heading">Our users</h1>
+                    <div class="users__cards"></div>
+                    <div class="user__buttons">
+                        <button class="button button--previous">previous</button>
+                        <button class="button button--next">next</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script type="text/template" id="login-template">
+        <form class="login-form">
+            <div class="login-form__email">
+                <label for="email-input">Email</label>
+                <input type="text" id="email-input" class='login-form__email-input' placeholder='Type your email'>
+            </div>
+            <div class="login-form__password">
+                <label for="password-input">Password</label>
+                <input type="password" id="password-input" class='login-form__password-input' placeholder='Type yuor password'>
+            </div>
+            <button class='button login-form__button'>Log in</button>
+            <span class='login-form__error'></span>
+        </form>
+    </script>
+
+    <script type="text/template" id="users-template">
+        <ul class='user'>
+            <div class="user__info">
+                <li class="user__avatar">
+                    <img class='user__avatar' src="{{avatar}}" alt="{{name}}">
+                </li>
+                <li class='user__name'>{{name}}</li>
+                <li class='user__email'>{{email}}</li>
+            </div>
+            <form class='update-form user__update-form'>
+                <input class='update-form__name' type="text">
+                <input class='update-form__email' type="text">
+                <button class='button update-form__button'>Update</button>
+            </form>
+            <div class="user__buttons">
+                <button class='button user__update'>Update user</button>
+                <button class='button user__delete'>Delete user</button>
+            </div>
+        </ul>
+    </script>
+</body>
+</html>
