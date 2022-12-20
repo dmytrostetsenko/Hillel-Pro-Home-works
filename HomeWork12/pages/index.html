@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../script/script.js" defer></script>
+    <title>Login form</title>
+</head>
+<body>
+    <main class="main">
+        <section class="form-section">
+            <form class="form">
+                <div class="form__tittle">
+                    <h1 class="form__heading">Login</h1>
+                    <hr class="form__devider">
+                    <p class="form__text">Welcome onboard with us!</p>
+                </div>
+                <div class="form__card">
+                    <label for="form__login">Username</label>
+                    <input class="form__login" id="form__login" type="text" placeholder="Enter your username">
+                    <span class="form__login-error"></span>
+                </div>
+                <div class="form__card">
+                    <label for="form__password">Password</label>
+                    <input class="form__password" id="form__password" type="password" placeholder="Enter your password">
+                </div>
+                <div class="form__card">
+                    <button class="form__button" disabled>Log in</button>
+                    <span class="form__login-error"></span>
+                    <span class="form__error"></span>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

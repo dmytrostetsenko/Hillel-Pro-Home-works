@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: rgb(23, 98, 105);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    padding: 20px 30px 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    width: 480px;
+    color: #fff;
+    background:linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.57%, rgba(196, 196, 196, 0.1) 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 25px;
+}
+
+.form__tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form__heading{
+    font-family: Iceland;
+    font-size: 40px;
+    margin: 0;
+}
+
+.form__devider{
+    width: 110px;
+    margin: 0;
+    background:#fff;
+}
+
+.form__text{
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.form__card{
+    position: relative;
+}
+
+.form__login,
+.form__password,
+.form__button{
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    line-height: 18px;
+    color: #fff;
+    background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.57%, rgba(196, 196, 196, 0.1) 100%);
+}
+
+.form__login::placeholder,
+.form__password::placeholder{
+    color: #fff;
+    opacity: 0.5;
+}
+
+.form__login:focus,
+.form__password:focus{
+    outline: 1px inset rgba(255, 255, 255, 0.7);
+}
+
+.form__button{
+    overflow: hidden;
+    position: relative;
+    color: rgb(120, 120, 120);
+    background: #bce6df;
+    font-family: Iceland;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.form__button::after{
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+
+.form__button:enabled{
+    color: #000;
+    background: #A5D9D0;
+    cursor: pointer;
+}
+
+.form__button:hover:enabled{
+    background: #84c9be;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form__button:hover::after{
+    left: 120%;
+}
+
+.form__button:active:enabled{
+    background: #6cb6aa;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form__login-error,
+.form__error{
+    position: absolute;
+    color: rgb(243, 50, 50);
+    left: 0;
+    bottom: -30px;
+}
+
+.form__error{
+    bottom: -50px;
+}
