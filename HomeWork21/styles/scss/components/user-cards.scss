@@ -1,0 +1,107 @@
+@import '../library';
+.section-users{
+    display: none;
+}
+
+.section-users--active{
+    display: block;
+}
+
+.user__hidden{
+    display: none;
+}
+
+.users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.users__navigation{
+    padding: 20px;
+    width: 100%;
+    text-align: end;
+}
+
+.users__cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.user{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px 0;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    list-style: none;
+}
+.user__hidden{
+    display: none;
+}
+
+.user__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.user__avatar{
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5); 
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.users__buttons{
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+
+
+.update-form{
+    display: none;
+}
+.update-form--active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.update-form__name,
+.update-form__email{
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.update-form__name:focus,
+.update-form__email:focus{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+.user__update--hidden{
+    display: none;
+}
+
+.user__delete--hidden{
+    display: none;
+}
+
+.user__name--hidden{
+    display: none;
+}
+.user__email--hidden{
+    display: none;
+}

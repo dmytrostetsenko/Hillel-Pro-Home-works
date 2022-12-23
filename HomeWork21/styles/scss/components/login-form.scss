@@ -1,0 +1,82 @@
+@import '../library';
+.section-login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 3px 3px 12px 3px rgba(255, 255, 255, 0.2);
+}
+
+.login-form__email,
+.login-form__password{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-form__email-input,
+.login-form__password-input{
+    font-weight: 700;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.login-form__email-input{
+    background-image: url(../images/login-form/login-form-user.png);
+    background-size: 15px;
+}
+
+.login-form__password-input{
+    background-image: url(../images/login-form/login-form-lock.png);
+    background-size: 20px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+.login-form__email-input::placeholder,
+.login-form__password-input::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+}
+.login-form__email-input:focus,
+.login-form__password-input:focus{
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+label{
+    align-self: flex-start;
+}
+
+.login-form__button{
+    padding: 15px;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+
+
+.section-login--hidden{
+    display: none;
+}
+

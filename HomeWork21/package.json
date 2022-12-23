@@ -1,0 +1,26 @@
+{
+  "name": "homework21",
+  "version": "1.0.0",
+  "description": "This is 1st project where i learning to use gulp and npm packages",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gulp serveProject",
+    "start": "gulp startProject"
+  },
+  "keywords": [
+    "gulp",
+    "npm"
+  ],
+  "author": "Dmytro Stetsenko",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.57.1"
+  }
+}

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, #2606A6 -1.41%, #9A0AB1 35.15%, #FF003D 100%);
+    color: #fff;
+    font-family: Montserrat;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.button{
+    width: 120px;
+    font-weight: 700;
+    padding: 12px 5px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    background: rgba(251, 100, 107, 0.6);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button:hover{
+    background-color: rgba(251, 100, 107, 0.8);
+    box-shadow: 1px 1px 12px 3px rgba(255, 255, 255, 0.2);
+}
+
+.button:active{
+    box-shadow: none;
+    background-color: rgba(251, 100, 107, 1);
+}
+
+.button:disabled{
+    background-color: rgba(251, 100, 107, 0.1);
+    box-shadow: none;
+    cursor: default;
+}
+.section-login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 3px 3px 12px 3px rgba(255, 255, 255, 0.2);
+}
+
+.login-form__email,
+.login-form__password{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-form__email-input,
+.login-form__password-input{
+    font-weight: 700;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.login-form__email-input{
+    background-image: url(../images/login-form/login-form-user.png);
+    background-size: 15px;
+}
+
+.login-form__password-input{
+    background-image: url(../images/login-form/login-form-lock.png);
+    background-size: 20px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+.login-form__email-input::placeholder,
+.login-form__password-input::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+}
+.login-form__email-input:focus,
+.login-form__password-input:focus{
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+label{
+    align-self: flex-start;
+}
+
+.login-form__button{
+    padding: 15px;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+
+
+.section-login--hidden{
+    display: none;
+}
+
+.section-users{
+    display: none;
+}
+
+.section-users--active{
+    display: block;
+}
+
+.user__hidden{
+    display: none;
+}
+
+.users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.users__navigation{
+    padding: 20px;
+    width: 100%;
+    text-align: end;
+}
+
+.users__cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.user{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px 0;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    list-style: none;
+}
+.user__hidden{
+    display: none;
+}
+
+.user__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.user__avatar{
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5); 
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.users__buttons{
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+
+
+.update-form{
+    display: none;
+}
+.update-form--active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.update-form__name,
+.update-form__email{
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.update-form__name:focus,
+.update-form__email:focus{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+.user__update--hidden{
+    display: none;
+}
+
+.user__delete--hidden{
+    display: none;
+}
+
+.user__name--hidden{
+    display: none;
+}
+.user__email--hidden{
+    display: none;
+}
